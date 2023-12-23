@@ -30,7 +30,7 @@ const Blog: React.FC<Props> = (props) => {
     <Layout>
       <div className="page">
         <h1>Public Feed</h1>
-        <main>
+        <main className="flex gap-8 justify-center items-center">
           {props.posts.map((post) => (
             <div key={post.id} className="post">
               <Post post={post} />
