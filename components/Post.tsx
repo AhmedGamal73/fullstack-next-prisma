@@ -17,7 +17,7 @@ const Post: React.FC<{ post: PostProps }> = ({ post }) => {
   const router = useRouter();
   const authorName = post.author ? post.author.name : "Unknown author";
   return (
-    <div className="text-current p-8" onClick={() => router.push("/post/[id]", `/post/${post.id}`)}>
+    <div className="text-current p-8 bg-red-500 hover:bg-blue-500 text-zinc-50" onClick={() => router.push("/post/[id]", `/post/${post.id}`)}>
       <h2>{post.title}</h2>
       <small>By {authorName}</small>
       <ReactMarkdown children={post.content} />

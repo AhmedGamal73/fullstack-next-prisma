@@ -12,9 +12,6 @@ const Header: React.FC = () => {
       <Link href="/" className="bold" data-active={isActive("/")}>
           Feed
       </Link>
-      <Link href="/" className="bold" data-active={isActive("/")}>
-         Home 
-      </Link>
       <style jsx>{`
         .bold {
           font-weight: bold;

@@ -30,8 +30,8 @@ const Post: React.FC<PostProps> = (props) => {
 
   return (
     <Layout>
-      <div className="bg-white p-8">
-        <h2>{title}</h2>
+      <div className="bg-blue-200 p-8">
+        <h2 className="text-red">{title}</h2>
         <p>By {props?.author?.name || "Unknown author"}</p>
         <ReactMarkdown children={props.content} />
       </div>
